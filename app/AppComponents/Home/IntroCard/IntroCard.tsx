@@ -13,9 +13,9 @@ const IntroCard = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="xl:w-[50%] xl:flex xl:flex-col xl:justify-center xl:items-end"
+      className="xl:w-[40%] xl:flex xl:flex-col xl:justify-center xl:items-end"
     >
-      <Card className="w-[90%] lg:w-[50%] mx-auto mt-[6rem] lg:mt-[8rem] xl:mt-[5.5rem] xl:mx-0">
+      <Card className="w-[90%] lg:w-[50%] xl:w-[55%] mx-auto mt-[6rem] lg:mt-[8rem] xl:mt-[5.5rem] xl:mx-0">
         <CardHeader className="py-8 px-6">
           <Image
             src={RG_Photo}
