@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <RootLayout>
       <NavBar />
-      <div className="flex flex-col gap-y-8 xl:flex-row xl:justify-start w-full">
+      <div className="flex flex-col gap-y-8 xl:flex-row xl:justify-center xl:gap-x-10 w-full xl:mt-[4rem]">
         <IntroCard />
         <HomeSectionRight/>
       </div>

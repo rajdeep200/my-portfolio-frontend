@@ -13,8 +13,9 @@ const IntroCard = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
+      className="xl:w-[50%] xl:flex xl:flex-col xl:justify-center xl:items-end"
     >
-      <Card className="w-[90%] mx-auto mt-[6rem] xl:mt-[5.5rem]">
+      <Card className="w-[90%] lg:w-[50%] mx-auto mt-[6rem] lg:mt-[8rem] xl:mt-[5.5rem] xl:mx-0">
         <CardHeader className="py-8 px-6">
           <Image
             src={RG_Photo}
@@ -24,12 +25,12 @@ const IntroCard = () => {
             width={260}
           />
         </CardHeader>
-        <CardContent className="mx-auto md:w-1/2 lg:w-[45%]">
-          <div className="flex flex-col gap-y-5">
+        <CardContent className="mx-auto md:w-1/2 lg:w-full">
+          <div className="flex flex-col gap-y-5 lg:justify-center lg:items-center">
             <h2 className="font-poppins font-bold text-4xl text-zinc-800 text-center">
               Rajdeep Ghosh
             </h2>
-            <p className="font-poppins text-center text-[16px] leading-[1.2em] text-zinc-500 font-medium">
+            <p className="font-poppins text-center text-[16px] leading-[1.2em] text-zinc-500 font-medium lg:w-[70%] xl:w-[90%]">
               A passionate Software Developer dedicated to crafting cutting-edge
               solutions that drive innovation and impact
             </p>
