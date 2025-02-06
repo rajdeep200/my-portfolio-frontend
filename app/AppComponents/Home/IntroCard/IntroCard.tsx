@@ -27,10 +27,10 @@ const IntroCard = () => {
         </CardHeader>
         <CardContent className="mx-auto md:w-1/2 lg:w-full">
           <div className="flex flex-col gap-y-5 lg:justify-center lg:items-center">
-            <h2 className="font-poppins font-bold text-4xl text-zinc-800 text-center">
+            <h2 className="font-poppins font-bold text-3xl text-zinc-800 text-center">
               Rajdeep Ghosh
             </h2>
-            <p className="font-poppins text-center text-[16px] leading-[1.2em] text-zinc-500 font-medium lg:w-[70%] xl:w-[90%]">
+            <p className="font-poppins text-center text-[15px] leading-[1.2em] text-zinc-500 font-medium lg:w-[70%] xl:w-[90%]">
               A passionate Software Developer dedicated to crafting cutting-edge
               solutions that drive innovation and impact
             </p>
