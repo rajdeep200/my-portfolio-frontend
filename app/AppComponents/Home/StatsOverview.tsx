@@ -19,7 +19,7 @@ const StatsOverview = () => {
             className="flex flex-col justify-center items-center"
           >
             <h2 className="text-white text-[40px] lg:text-[60px] font-bold">{stats.num}</h2>
-            <p className="text-zinc-400 text-[20px] leading-5 text-center">
+            <p className="text-zinc-400 text-[15px] lg:text-[20px] leading-5 text-center">
               {stats.label}
             </p>
           </div>
