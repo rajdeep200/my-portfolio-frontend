@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import RG_Photo from "../../../../assets/RG_Photo2.jpg";
+import RG_Photo from "../../../assets/RG_Photo2.jpg";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { SOCIAL_MEDIA_LIST } from "@/app/constants/introCardSocialIconList";
 import { motion } from "framer-motion";
