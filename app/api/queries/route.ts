@@ -2,6 +2,10 @@ import { NextResponse } from "next/server";
 import Query from "@/models/Queries";
 import { connectDB } from "@/lib/mongodb";
 
+export const config = {
+  runtime: "edge",
+};
+
 export async function POST(req: Request) {
   try {
     await connectDB();
