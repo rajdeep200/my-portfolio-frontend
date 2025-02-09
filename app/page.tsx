@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <NavBar />
-      <div className="flex flex-col gap-y-8 xl:flex-row xl:justify-center xl:gap-x-10 w-full xl:mt-[4rem]">
+      <div className="flex flex-col gap-y-8 xl:flex-row xl:justify-center xl:gap-x-10 w-full">
         <IntroCard />
         <HomeSectionRight />
       </div>
