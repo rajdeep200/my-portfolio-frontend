@@ -1,5 +1,5 @@
 .navBar_container {
-    @apply rounded-lg fixed h-[3rem] lg:h-[4rem] top-1 left-1/2 -translate-x-1/2 flex justify-center items-center gap-x-3 xl:gap-x-8 w-[70%] lg:w-[30%] mx-auto mt-[3%] bg-zinc-800  border-none;
+    @apply rounded-lg h-[3rem] lg:h-[4rem] top-1 left-1/2 flex justify-center items-center gap-x-3 xl:gap-x-8 w-[70%] lg:w-[30%] mx-auto mt-[3%] bg-zinc-800  border-none;
 }
 
 .navBar_container button {

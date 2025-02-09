@@ -18,6 +18,9 @@ export function NavBar() {
       case "exp":
         section = document.getElementById("exp-section");
         break;
+      case "contact":
+        section = document.getElementById("contact-section");
+        break;
 
       default:
         break;
@@ -38,7 +41,7 @@ export function NavBar() {
       handleScrollToTechSection(id);
       console.log("exp");
     } else if (id === "contact") {
-      console.log("contact");
+      handleScrollToTechSection(id);
     }
   };
 

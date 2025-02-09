@@ -1,4 +1,5 @@
 // import Image from "next/image";
+import ContactSection from "./AppComponents/ContactSection";
 import HomeSectionRight from "./AppComponents/Home/HomeSectionRight";
 import IntroCard from "./AppComponents/Home/IntroCard";
 import MyExp from "./AppComponents/Home/MyExpSection";
@@ -16,7 +17,9 @@ export default function Home() {
       <div>
         <TechSkillSection />
         <MyExp/>
+        <ContactSection/>
       </div>
+      <p className="my-[10%] text-center text-zinc-600 text-xs tracking-wide">Created by Me using NextJS & Tailwind</p>
     </div>
   );
 }
