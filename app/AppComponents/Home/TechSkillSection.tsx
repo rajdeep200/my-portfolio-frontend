@@ -1,5 +1,3 @@
-'use client'
-
 import React from "react";
 import PrimaryHeading from "./PrimaryHeading";
 import DynamicFlexSection from "./DynamicFlexSection";

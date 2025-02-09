@@ -3,7 +3,7 @@ import ContactSection from "./AppComponents/ContactSection";
 import HomeSectionRight from "./AppComponents/Home/HomeSectionRight";
 import IntroCard from "./AppComponents/Home/IntroCard";
 import MyExp from "./AppComponents/Home/MyExpSection";
-import TechSkillSection from "./AppComponents/Home/TechSkillSection";
+import TechSkillSection from "@/app/AppComponents/Home/TechSkillSection";
 import { NavBar } from "./AppComponents/NavBar/NavBar";
 
 export default function Home() {
