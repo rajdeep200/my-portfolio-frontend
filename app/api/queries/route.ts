@@ -1,18 +1,18 @@
 import { NextResponse } from "next/server";
-import Query from "@/models/Queries";
-import { connectDB } from "@/lib/mongodb";
+import { neon } from "@neondatabase/serverless";
 
 export const config = {
   runtime: "edge",
 };
 
+const sql = neon(process.env.DATABASE_URL || '')
+
 export async function POST(req: Request) {
   try {
-    await connectDB();
     const { name, email, message } = await req.json();
-    const newQuery = new Query({ name, email, message });
-    await newQuery.save();
-    return NextResponse.json({ ack: 1 }, { status: 201 });
+    const result =
+      await sql`INSERT INTO queries (name, email, message) VALUES(${name}, ${email}, ${message}) RETURNING id;`;
+    return NextResponse.json({ ack: 1, id:result[0].id }, { status: 201 });
   } catch (error) {
     return NextResponse.json({ ack: 0, error }, { status: 500 });
   }
