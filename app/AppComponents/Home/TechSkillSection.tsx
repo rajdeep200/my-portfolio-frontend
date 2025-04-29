@@ -12,7 +12,7 @@ const TechSkillSection = () => {
         textCentered={true}
       />
       <div className="my-12">
-      <DynamicFlexSection items={TECH_SKILLS} />
+        <DynamicFlexSection items={TECH_SKILLS} />
       </div>
     </div>
   );

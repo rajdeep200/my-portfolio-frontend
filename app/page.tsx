@@ -5,6 +5,7 @@ import IntroCard from "./AppComponents/Home/IntroCard";
 import MyExp from "./AppComponents/Home/MyExpSection";
 import TechSkillSection from "@/app/AppComponents/Home/TechSkillSection";
 import { NavBar } from "./AppComponents/NavBar/NavBar";
+import MyProjectsSection from "./AppComponents/Home/MyProjectsSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <HomeSectionRight />
       </div>
       <div>
+        <MyProjectsSection/>
         <TechSkillSection />
         <MyExp/>
         <ContactSection/>

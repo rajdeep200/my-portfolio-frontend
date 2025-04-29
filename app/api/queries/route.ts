@@ -20,8 +20,6 @@ export async function POST(req: Request) {
 
 export async function GET() {
   try {
-    // await connectDB();
-    // const users = await User.find();
     return NextResponse.json({ message: "User fetched" }, { status: 200 });
   } catch (error) {
     return NextResponse.json(

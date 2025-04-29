@@ -18,9 +18,16 @@ export const EXP_LIST: Experience[] = [
         logo: <img src="https://i.ibb.co/93rt4sdk/cbnits-Logo.png" alt="" className='h-14 w-14 lg:h-[75px] lg:w-[75px]' />,
         roles: [
           {
+            title: "Senior Software Engineer",
+            employmentType: "Full-time",
+            period: "Jan 2025 - Present · 4 mos",
+            location: "Greater Kolkata Area · On-site",
+            skills: ["Git", "Spring Boot", "+12 skills"],
+          },
+          {
             title: "Full Stack Developer",
             employmentType: "Full-time",
-            period: "Jun 2024 - Present · 9 mos",
+            period: "Jun 2024 - Jan 2025 · 8 mos",
             location: "Greater Kolkata Area · On-site",
             skills: ["Git", "Spring Boot", "+12 skills"],
           },
