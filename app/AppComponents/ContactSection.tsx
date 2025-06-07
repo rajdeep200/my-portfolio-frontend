@@ -58,8 +58,8 @@ const ContactSection = () => {
           styles={{
             marginTop: "50px",
             overflow: "hidden",
-            height: "250px",
-            backgroundColor: "black",
+            maxHeight: "400px",
+            backgroundColor: "white",
             border: "none",
             borderRadius: "10px",
             boxShadow: "0px 0px 30px white",
