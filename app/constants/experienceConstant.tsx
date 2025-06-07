@@ -20,16 +20,16 @@ export const EXP_LIST: Experience[] = [
           {
             title: "Senior Software Engineer",
             employmentType: "Full-time",
-            period: "Jan 2025 - Present · 4 mos",
+            period: "Jan 2025 - Present · 6 mos",
             location: "Greater Kolkata Area · On-site",
-            skills: ["Git", "Spring Boot", "+12 skills"],
+            skills: ["Git", "MERN", "+12 skills"],
           },
           {
             title: "Full Stack Developer",
             employmentType: "Full-time",
             period: "Jun 2024 - Jan 2025 · 8 mos",
             location: "Greater Kolkata Area · On-site",
-            skills: ["Git", "Spring Boot", "+12 skills"],
+            skills: ["Git", "React.js", "+12 skills"],
           },
           {
             title: "Program Analyst",
