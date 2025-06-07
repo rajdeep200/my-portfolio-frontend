@@ -18,6 +18,10 @@ const ContactSection = () => {
   const handleSubmit = async () => {
     try {
       setLoading(true);
+      if(!name.length || !email.length || !message.length){
+        toast.error("Please fill all the fields")
+        return
+      }
       const response = await sendQuery({ name, email, message });
       if (response.ack) {
         toast.success("Message sent successfully!")
@@ -30,8 +34,9 @@ const ContactSection = () => {
     } catch (error) {
       toast.error("Something went wrong...")
       console.error(error);
+    }finally{
+      setLoading(false)
     }
-    setLoading(false)
   };
   return (
     <>
@@ -42,7 +47,7 @@ const ContactSection = () => {
           firstTitle="LET's HAVE"
           secondTitle="A CHAT"
         />
-        <div className="relative font-poppins shadow-md shadow-zinc-400 my-[8%] flex flex-col justify-center items-center gap-y-6 px-3 pt-3 pb-6 rounded-xl bg-zinc-900 text-white md:mx-auto w-[80%] md:w-[70%] lg:w-[50%] xl:w-[40%]">
+        <div className="relative font-poppins shadow-md shadow-zinc-400 mt-[8%] mb-[8%] flex flex-col justify-center items-center gap-y-6 px-3 pt-3 pb-6 rounded-xl bg-zinc-900 text-white md:mx-auto w-[80%] md:w-[70%] lg:w-[50%] xl:w-[40%]">
           {
             loading && <Loader/>
           }
@@ -52,6 +57,7 @@ const ContactSection = () => {
             type="text"
             placeholder="Your Name"
             className="py-3 h-full"
+            required
           />
           <Input
             value={email}
@@ -59,12 +65,14 @@ const ContactSection = () => {
             type="email"
             placeholder="Your Email"
             className="py-3 h-full"
+            required
           />
           <Textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Your Message"
             className="py-3 h-full"
+            required
           />
           <Button
             onClick={handleSubmit}
