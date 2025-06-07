@@ -40,8 +40,6 @@ const ContactSection = () => {
     }
   };
 
-  const el = document.getElementById("__next");
-  console.log("element", el);
   return (
     <>
       <ToastContainer />
