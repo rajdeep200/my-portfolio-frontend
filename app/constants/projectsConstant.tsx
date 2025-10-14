@@ -3,16 +3,25 @@ import ZolaLogo from '../../assets/projects/ZOLA_Logo.png'
 import eZTLogo from '../../assets/projects/eZTLogo.svg'
 import ZEUSLogo from '../../assets/projects/ZEUS-Logo.webp'
 import CBNITSLogo from '../../assets/projects/CBNITS_Logo.svg'
+import MockQubeLogo from '../../assets/projects/mockqubelogo.webp'
 
 export type Project = {
-    id: number;
-    img: JSX.Element;
-    title: string;
-    description: string;
-    link: string;
+  id: number;
+  img: JSX.Element;
+  title: string;
+  description: string;
+  link: string;
 }
 
 export const PROJECTS: Project[] = [
+  {
+    id: 5,
+    img: <Image src={MockQubeLogo} alt="MockQube" height={120} width={160} />,
+    title: "MockQube – AI Mock Interviews for Developers",
+    link: "https://mockqube.com/",
+    description:
+      "My SaaS for realistic, voice-enabled mock interviews covering DSA, system design, and behavioral rounds. Built end-to-end: Next.js frontend, voice stack, and an adaptive interview engine with role-/company-targeted questioning and performance feedback.",
+  },
   {
     id: 1,
     img: (
@@ -24,7 +33,7 @@ export const PROJECTS: Project[] = [
       />
     ),
     title: "ZOLA - Zuellig Pharma",
-    link:"https://zola.zuelligpharma.com/",
+    link: "https://zola.zuelligpharma.com/",
     description:
       "A secure web portal designed for enhanced product visibility and accessibility in the pharmaceutical supply chain. I contributed to developing key features including real-time tracking, authentication, and user role management, ensuring compliance with healthcare data standards.",
   },
@@ -39,7 +48,7 @@ export const PROJECTS: Project[] = [
       />
     ),
     title: "eZTracker",
-    link:"https://app.eztracker.io/home",
+    link: "https://app.eztracker.io/home",
     description:
       "Worked on Zuellig Pharma’s blockchain-powered traceability platform enabling patients and providers to verify medicine authenticity via QR code scans. Focused on cold-chain data capture, performance optimization, and dashboard visualization for internal stakeholders.",
   },
@@ -54,7 +63,7 @@ export const PROJECTS: Project[] = [
       />
     ),
     title: "ZEUS RDC – Regional Distribution Center Module",
-    link:"https://zeus.eztracker.io/rdc/login",
+    link: "https://zeus.eztracker.io/rdc/login",
     description:
       "A specialized logistics portal integrated within the eZTracker ecosystem, focused on managing real-time inventory, dispatch, and order processing for regional hubs. Involved in building frontend components and streamlining backend APIs for warehouse operations.",
   },
@@ -69,8 +78,8 @@ export const PROJECTS: Project[] = [
       />
     ),
     title: "CBNITS Landing Page",
-    link:"https://cbnits.com/",
+    link: "https://cbnits.com/",
     description:
       "Designed and developed a clean, responsive landing page for CBNITS using modern frontend technologies. Focused on performance, SEO best practices, and delivering a pixel-perfect UI aligned with branding goals.",
-  },
+  }
 ];

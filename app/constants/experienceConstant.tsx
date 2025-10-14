@@ -15,7 +15,7 @@ export const EXP_LIST: Experience[] = [
     {
         company: "CBNITS",
         duration: "3 yrs 4 mos",
-        logo: <img src="https://i.ibb.co/93rt4sdk/cbnits-Logo.png" alt="" className='h-14 w-14 lg:h-[75px] lg:w-[75px]' />,
+        logo: <img src="https://i.ibb.co/93rt4sdk/cbnits-Logo.png" alt="" className='h-12 w-12 lg:h-[50px] lg:w-[80px]' />,
         roles: [
           {
             title: "Senior Software Engineer",

@@ -1,7 +1,48 @@
+/* Container */
 .navBar_container {
-    @apply rounded-lg h-[3rem] lg:h-[4rem] top-1 left-1/2 flex justify-center items-center gap-x-3 xl:gap-x-8 w-[70%] lg:w-[30%] mx-auto mt-[3%] bg-zinc-800  border-none;
+  @apply relative mx-auto mt-[3%]
+    flex items-center justify-center gap-4 xl:gap-6
+    h-[3rem] lg:h-[4rem] w-[92%] sm:w-[78%] lg:w-[46rem] /* centered & consistent width */
+    rounded-xl border border-white/10 bg-zinc-900/70 backdrop-blur-md
+    shadow-[0_10px_30px_rgba(0,0,0,0.45)];
 }
 
+/* Buttons */
 .navBar_container button {
-    @apply focus:bg-black data-[state=open]:bg-black;
+  @apply relative grid place-items-center
+    h-10 lg:size-12 rounded-lg
+    text-white/90
+    outline-none
+    transition-all duration-200
+    focus-visible:ring-2 focus-visible:ring-emerald-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black;
 }
+
+/* Idle vs active */
+.nav_btn--idle {
+  @apply bg-white/5 hover:bg-white/10 border border-white/10 cursor-pointer;
+}
+.nav_btn--active {
+  @apply bg-white/15 border border-white/20 cursor-pointer;
+  box-shadow: 0 0 0 3px rgba(16,185,129,0.15);
+}
+
+/* Icon sizing normalization */
+.nav_icon > svg {
+  width: 20px;
+  height: 20px;
+}
+@media (min-width: 1024px) {
+  .nav_icon > svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Optional: when shadcn sets state=open */
+.navBar_container button[data-state="open"] {
+  @apply bg-white/15;
+}
+
+/* Global keyframes used across the site (keep once in globals if you prefer)
+   If you already added these in globals.css, you can remove from here. */
+@keyframes spinSlow { to { transform: rotate(360deg); } }

@@ -73,3 +73,31 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes spinSlow {
+  to { transform: rotate(360deg); }
+}
+@keyframes pulseSoft {
+  0%   { opacity: .7; transform: scale(.995); filter: blur(18px); }
+  50%  { opacity: 1;  transform: scale(1.01); filter: blur(24px); }
+  100% { opacity: .7; transform: scale(.995); filter: blur(18px); }
+}
+
+/* optional helper classes (keeps JSX clean) */
+.animate-spin-slow      { animation: spinSlow 14s linear infinite; }
+.animate-pulse-soft     { animation: pulseSoft 4.5s ease-in-out infinite; }
+/* mobile-tighter glow spread */
+.glow-inset             { inset: -0.5rem; }          /* -inset-2 */
+@media (min-width: 640px){ .glow-inset { inset: -1rem; } } /* sm:-inset-4 */
+@media (min-width: 768px){ .glow-inset { inset: -1.5rem; } } /* md:-inset-6 */
+
+
+/* PROJECT CARD */
+@keyframes hueSpin { to { filter: hue-rotate(360deg); } }
+@keyframes shineSweep {
+  0%   { transform: translateX(-120%) rotate(12deg); opacity: 0; }
+  40%  { opacity: .7; }
+  60%  { opacity: .7; }
+  100% { transform: translateX(120%)  rotate(12deg); opacity: 0; }
+}
+.animate-hue-spin { animation: hueSpin 8s linear infinite; }
