@@ -318,6 +318,14 @@ body {
 /* ---------- Sections ---------- */
 .section { padding: clamp(56px, 9vw, 104px) clamp(20px, 4vw, 48px); }
 .section-inner { max-width: 1120px; margin: 0 auto; }
+/* Tighter vertical rhythm on phones for the stacked content sections
+   (About and Contact keep the default padding). */
+@media (max-width: 640px) {
+  .impact, .focus, .work, .stack {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 .section-label {
   font-family: var(--font-mono);
   font-size: 12px;
