@@ -1,27 +1,27 @@
-// import Image from "next/image";
+import Nav from "./AppComponents/Nav";
+import Hero from "./AppComponents/Hero";
+import About from "./AppComponents/About";
+import PullQuote from "./AppComponents/PullQuote";
+import CurrentEngagement from "./AppComponents/CurrentEngagement";
+import Focus from "./AppComponents/Focus";
+import Work from "./AppComponents/Work";
+import Stack from "./AppComponents/Stack";
 import ContactSection from "./AppComponents/ContactSection";
-import HomeSectionRight from "./AppComponents/Home/HomeSectionRight";
-import IntroCard from "./AppComponents/Home/IntroCard";
-import MyExp from "./AppComponents/Home/MyExpSection";
-import TechSkillSection from "@/app/AppComponents/Home/TechSkillSection";
-import { NavBar } from "./AppComponents/NavBar/NavBar";
-import MyProjectsSection from "./AppComponents/Home/MyProjectsSection";
+import Footer from "./AppComponents/Footer";
 
 export default function Home() {
   return (
-    <div>
-      <NavBar />
-      <div className="flex flex-col gap-y-8 xl:flex-row xl:justify-center xl:gap-x-10 w-full">
-        <IntroCard />
-        <HomeSectionRight />
-      </div>
-      <div>
-        <MyProjectsSection/>
-        <TechSkillSection />
-        <MyExp/>
-        <ContactSection/>
-      </div>
-      <p className="my-[10%] text-center text-zinc-600 text-xs tracking-wide">Created by Me using NextJS & Tailwind</p>
+    <div className="page">
+      <Nav />
+      <Hero />
+      <About />
+      <PullQuote />
+      <CurrentEngagement />
+      <Focus />
+      <Work />
+      <Stack />
+      <ContactSection />
+      <Footer />
     </div>
   );
 }
