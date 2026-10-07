@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   title: "Rajdeep Ghosh — Backend & AI Engineer",
   description:
     "Full-stack & backend engineer building reliable systems, now bringing that engineering discipline to AI & RAG tools for e-commerce.",
-  icons: "/logo.png",
+  icons: "/RG_logo.png",
 };
 
 export default function RootLayout({
