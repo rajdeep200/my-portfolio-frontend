@@ -342,7 +342,10 @@ body {
     transform: translateY(26px);
     animation: revealIn linear both;
     animation-timeline: view();
-    animation-range: entry 0% cover 28%;
+    /* Finish the fade once the section has fully entered. The reference used
+       `cover 28%`, which needs extra scroll past the section, so sections near
+       the bottom of a short page never reached full opacity. */
+    animation-range: entry 0% entry 100%;
   }
 }
 @keyframes revealIn {
