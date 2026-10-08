@@ -8,6 +8,7 @@ import Work from "./AppComponents/Work";
 import Stack from "./AppComponents/Stack";
 import ContactSection from "./AppComponents/ContactSection";
 import Footer from "./AppComponents/Footer";
+import AskWidget from "./AppComponents/AskWidget";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Stack />
       <ContactSection />
       <Footer />
+      <AskWidget />
     </div>
   );
 }
