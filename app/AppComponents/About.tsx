@@ -17,7 +17,7 @@ export default function About() {
                 src="/portrait.jpg"
                 alt="Portrait of Rajdeep Ghosh"
                 fill
-                sizes="64px"
+                sizes="120px"
               />
             </div>
             <p>
