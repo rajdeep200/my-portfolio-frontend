@@ -3,6 +3,7 @@ import HeroScene from "./HeroScene";
 const STATS = [
   { num: "4+", label: "Years in production systems" },
   { num: "99.9%", label: "Uptime shipped at scale" },
+  { num: "RAG", label: "& agents in production" },
   { num: "AWS", label: "Certified Developer" },
 ];
 
@@ -18,7 +19,7 @@ export default function Hero() {
           Open to remote &amp; international projects
         </div>
         <p className="eyebrow reveal-load" style={delay(0.1)}>
-          Full-Stack &amp; Backend Engineer
+          Full-Stack, Backend &amp; AI Engineer
         </p>
         <h1 className="hero-title reveal-load" style={delay(0.15)}>
           Rajdeep Ghosh

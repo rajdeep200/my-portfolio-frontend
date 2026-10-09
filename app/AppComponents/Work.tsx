@@ -14,11 +14,11 @@ const PROJECTS = [
     tags: ["Next.js", "VAPI / LLM", "WebRTC", "Accessibility"],
   },
   {
-    title: "DocQuest — Document Q&A / RAG",
-    status: "In progress",
-    soon: true,
-    body: "A retrieval-augmented Q&A chatbot — my current build as I go deeper into RAG and agentic AI for e-commerce use cases.",
-    tags: ["FastAPI", "OpenAI", "RAG"],
+    title: "Ask Rajdeep — RAG Chatbot",
+    status: "Live",
+    soon: false,
+    body: "The chatbot on this site. FastAPI backend with OpenAI embeddings and pgvector on Supabase, grounded answers from my own docs, per-IP rate limiting and input guardrails, deployed on Render.",
+    tags: ["FastAPI", "OpenAI", "pgvector", "RAG"],
   },
 ];
 
