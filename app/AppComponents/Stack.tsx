@@ -49,6 +49,8 @@ const GROUPS: { title: string; note?: string; items: Tech[] }[] = [
       { name: "MySQL", icon: siMysql },
       { name: "MongoDB", icon: siMongodb },
       { name: "Redis", icon: siRedis },
+      { name: "pgvector" },
+      { name: "Supabase" },
     ],
   },
   {
@@ -70,11 +72,16 @@ const GROUPS: { title: string; note?: string; items: Tech[] }[] = [
   },
   {
     title: "AI / RAG",
-    note: "— in progress",
     items: [
       { name: "OpenAI API" },
-      { name: "RAG pipelines" },
-      { name: "Agentic workflows" },
+      { name: "Embeddings" },
+      { name: "Vector search" },
+      { name: "RAG & Advanced RAG" },
+      { name: "Tool calling" },
+      { name: "MCP" },
+      { name: "AI agents" },
+      { name: "LLM evaluation" },
+      { name: "Guardrails & observability" },
     ],
   },
 ];
