@@ -10,8 +10,8 @@ const PROJECTS = [
     title: "MockQube — AI Mock Interviewer",
     status: "Production",
     soon: false,
-    body: "Voice-based, role & level-aware mock interview tool with automated rubric scoring and feedback. ~4.7/5 user satisfaction, ~25% lower LLM runtime cost through caching and batching, accessibility score raised 76 → 96.",
-    tags: ["Next.js", "VAPI / LLM", "WebRTC", "Accessibility"],
+    body: "Voice-based, role & level-aware mock interview tool. The server owns the interview: streamed replies spoken sentence by sentence, barge-in, live code awareness and a spoken wrap-up as time runs out. Scores come from a weighted rubric computed in code, with strengths verified against what the candidate actually said. Adds a progress dashboard (trends, skills, recurring habits, practice plan), shareable reports and 30-day Cashfree passes with idempotent payment reconciliation. ~4.7/5 user satisfaction, ~25% lower LLM runtime cost through caching and batching, accessibility score raised 76 → 96.",
+    tags: ["Next.js", "OpenAI", "Streaming TTS", "Cashfree", "Accessibility"],
   },
   {
     title: "Ask Rajdeep — RAG Chatbot",
